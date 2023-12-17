@@ -56,6 +56,12 @@
 		8B4E014B2B2F6E680004A0FA /* Spotify-Clone */ = {
 			isa = PBXGroup;
 			children = (
+				8B4E01672B2F73700004A0FA /* Resources */,
+				8B4E01662B2F731D0004A0FA /* Managers */,
+				8B4E01652B2F73110004A0FA /* ViewModels */,
+				8B4E01642B2F72E60004A0FA /* Views */,
+				8B4E01622B2F72990004A0FA /* Models */,
+				8B4E01602B2F728B0004A0FA /* Controllers */,
 				8B4E014C2B2F6E680004A0FA /* AppDelegate.swift */,
 				8B4E014E2B2F6E680004A0FA /* SceneDelegate.swift */,
 				8B4E01502B2F6E680004A0FA /* ViewController.swift */,
@@ -65,6 +71,48 @@
 				8B4E015A2B2F6E690004A0FA /* Info.plist */,
 			);
 			path = "Spotify-Clone";
+			sourceTree = "<group>";
+		};
+		8B4E01602B2F728B0004A0FA /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		8B4E01622B2F72990004A0FA /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		8B4E01642B2F72E60004A0FA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		8B4E01652B2F73110004A0FA /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		8B4E01662B2F731D0004A0FA /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		8B4E01672B2F73700004A0FA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
