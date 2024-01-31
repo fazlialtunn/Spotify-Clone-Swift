@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8B06B5E62B6AEB2400BACFAA /* AuthResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B06B5E52B6AEB2400BACFAA /* AuthResponse.swift */; };
 		8B22B9572B49ED11009998F1 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B22B9562B49ED11009998F1 /* Extensions.swift */; };
 		8B290C5E2B43463C00839DAC /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B290C5D2B43463C00839DAC /* TabBarViewController.swift */; };
 		8B290C622B4346AC00839DAC /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B290C612B4346AC00839DAC /* SearchViewController.swift */; };
@@ -33,6 +34,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8B06B5E52B6AEB2400BACFAA /* AuthResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthResponse.swift; sourceTree = "<group>"; };
 		8B22B9562B49ED11009998F1 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		8B290C5D2B43463C00839DAC /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		8B290C612B4346AC00839DAC /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
@@ -142,6 +144,7 @@
 				8B290C7D2B434B5800839DAC /* AudioTrack.swift */,
 				8B290C7F2B434B5F00839DAC /* Artist.swift */,
 				8B290C812B434B6B00839DAC /* UserProfile.swift */,
+				8B06B5E52B6AEB2400BACFAA /* AuthResponse.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -260,6 +263,7 @@
 				8B290C6A2B43477B00839DAC /* WelcomeViewController.swift in Sources */,
 				8B290C6E2B4347A400839DAC /* ProfileViewController.swift in Sources */,
 				8B290C5E2B43463C00839DAC /* TabBarViewController.swift in Sources */,
+				8B06B5E62B6AEB2400BACFAA /* AuthResponse.swift in Sources */,
 				8B290C7A2B43481100839DAC /* HapticsManager.swift in Sources */,
 				8B290C7E2B434B5800839DAC /* AudioTrack.swift in Sources */,
 				8B4E01512B2F6E680004A0FA /* HomeViewController.swift in Sources */,
