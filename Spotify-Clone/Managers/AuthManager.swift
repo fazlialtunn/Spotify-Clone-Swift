@@ -46,9 +46,9 @@ final class AuthManager {
         guard let expirationDate = tokenExpirationDate else {
             return false
         }
-        let currendDate = Date()
+        let currentDate = Date()
         let fiveMinutes: TimeInterval = 300
-        return currendDate.addingTimeInterval(fiveMinutes) >= expirationDate
+        return currentDate.addingTimeInterval(fiveMinutes) >= expirationDate
     }
     public func exchangeCodeForToken(code: String,
                                      completion: @escaping ((Bool) -> Void)) {
@@ -119,12 +119,12 @@ final class AuthManager {
         }
     }
     
-    public func refreshAccessTokenIfNeeded(completion: @escaping (Bool) -> Void) {
+    public func refreshAccessTokenIfNeeded(completion: ((Bool) -> Void)?) {
         guard !refreshingToken else {
             return
         }
         guard shouldRefreshToken else {
-            completion(true)
+            completion?(true)
             return
         }
         guard let refreshToken = self.refreshToken else {
@@ -152,7 +152,7 @@ final class AuthManager {
         let data = basicToken.data(using: .utf8)
         guard let base64String = data?.base64EncodedString() else {
             print("failure to get base64")
-            completion(false)
+            completion?(false)
             return
         }
         
@@ -161,7 +161,7 @@ final class AuthManager {
        let task = URLSession.shared.dataTask(with: request) { [weak self] data, _, error in
            self?.refreshingToken = false
            guard let data = data, error == nil else {
-               completion(false)
+               completion?(false)
                return
            }
            do {
@@ -169,9 +169,9 @@ final class AuthManager {
                self?.onRefreshBlocks.forEach{$0(result.access_token)}
                self?.onRefreshBlocks.removeAll()
                self?.cacheToken(result: result)
-               completion(true)
+               completion?(true)
            } catch {
-               completion(false)
+               completion?(false)
                print(error.localizedDescription)
            }
         }

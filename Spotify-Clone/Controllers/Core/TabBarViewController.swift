@@ -27,6 +27,9 @@ class TabBarViewController: UITabBarController {
         let nav1 = UINavigationController(rootViewController: HomeVC)
         let nav2 = UINavigationController(rootViewController: SearchVC)
         let nav3 = UINavigationController(rootViewController: LibraryVC)
+        nav1.navigationBar.tintColor = .label
+        nav2.navigationBar.tintColor = .label
+        nav3.navigationBar.tintColor = .label
         
         nav1.tabBarItem = UITabBarItem(title: "Home", image: UIImage(systemName: "house"), tag: 1)
         nav2.tabBarItem = UITabBarItem(title: "Search", image: UIImage(systemName: "magnifyingglass"), tag: 2)
