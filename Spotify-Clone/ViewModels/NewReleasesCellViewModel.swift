@@ -6,3 +6,10 @@
 //
 
 import Foundation
+
+struct NewReleasesCellViewModel {
+    let name: String
+    let artworlURL: URL?
+    let numberOfTracks: Int
+    let artistName: String
+}

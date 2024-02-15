@@ -8,10 +8,8 @@
 import UIKit
 
 class TabBarViewController: UITabBarController {
-
     override func viewDidLoad() {
         super.viewDidLoad()
-
         let HomeVC = HomeViewController()
         let SearchVC = SearchViewController()
         let LibraryVC = LibraryViewController()
